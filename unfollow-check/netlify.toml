@@ -1,12 +1,9 @@
 [build]
-  base = "unfollow-check"
-  command = "npm ci && npm run build"
+  command = "npm ci --no-optional && npm run build"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "18"
-  NPM_VERSION = "10"
-  VITE_GITHUB_TOKEN = "$VITE_GITHUB_TOKEN"
 
 [[redirects]]
   from = "/*"
